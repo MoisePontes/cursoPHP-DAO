@@ -21,6 +21,18 @@ require_once ('config.php');
 //    echo 'Data Cad: '.$dtcadastro.'<br>';
 //}
 
-$login =  new Usuario();
-$login->login("Moise", "001001");
-echo $login;
+//$login =  new Usuario();
+//$login->login("Moise", "001001");
+//echo $login;
+
+//$insert = new Usuario('Tata', '432');
+////$insert->setDeslogin('Lucas');
+////$insert->setDessenha('#321@');
+//$insert->insert();
+//
+//echo $insert;
+
+$user = new Usuario();
+$user->loadById(21);
+$user->update("Mara", "484");
+echo $user;
