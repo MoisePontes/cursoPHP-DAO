@@ -32,7 +32,11 @@ require_once ('config.php');
 //
 //echo $insert;
 
+//$user = new Usuario();
+//$user->loadById(21);
+//$user->update("Mara", "484");
+//echo $user;
+
 $user = new Usuario();
-$user->loadById(21);
-$user->update("Mara", "484");
-echo $user;
+$user->loadById(14);
+$user->delete();
